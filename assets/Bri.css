@@ -126,7 +126,6 @@ img {
     /*insert background img */
     height: 400px;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     position: relative;
 }
@@ -147,6 +146,7 @@ img {
     text-align: right;
     justify-content: flex-end;
     z-index: 1;
+    padding-right: 50px;
 }
 /* Hero Style End */
 
