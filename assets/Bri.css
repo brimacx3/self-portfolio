@@ -137,6 +137,7 @@ img {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     z-index: 1;
+    padding: 50px;
 }
 .hero h3 {
     font-size: 20px;
@@ -146,7 +147,7 @@ img {
     text-align: right;
     justify-content: flex-end;
     z-index: 1;
-    padding-right: 50px;
+    padding-right: 100px;
 }
 /* Hero Style End */
 
@@ -238,7 +239,6 @@ section {
         padding-bottom: 10px;
         justify-content: center;
         position: relative;
-        width: 100%;
     }
     .hero {
         padding-bottom: 10px;
@@ -258,11 +258,37 @@ section {
         position: relative;
         width: 100%;
     }
+}
     @media screen and (max-width: 768px) {
         .hero {
             padding: 30px 15px;
+            font-size: 15px;
         }
+        .header-buttons {
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }   
+        
+    }
         @media screen and (max-width: 575px) {
-            .section-title {
-                width: 95%;
+            .header-buttons {
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
             }
+            .footer {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+        }
