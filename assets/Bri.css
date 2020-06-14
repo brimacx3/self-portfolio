@@ -126,7 +126,7 @@ img {
 /* Hero Start */
 
 .hero {
-    background-image: url(./images/phone-hero.jpg);
+    background-image: url("./images/phone-hero.jpg");
     height: 300px;
     width: auto;
     background-size: cover;
