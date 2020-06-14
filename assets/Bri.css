@@ -101,7 +101,7 @@ header nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.5)
 }
 
-.about-me {
+#about-me {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -109,6 +109,8 @@ header nav ul li a:hover {
     margin: 0 20px 0 20px;
     padding: 10px 10px 10px 10px;
 }
+
+
 
 img {
     max-width: 100%;
@@ -122,12 +124,18 @@ img {
 
 
 /* Hero Start */
+
 .hero {
-    /*insert background img */
-    height: 400px;
+    background-image: url(./images/phone-hero.jpg);
+    height: 300px;
+    width: auto;
     background-size: cover;
-    background-position: center;
-    position: relative;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
 }
 
 
@@ -136,19 +144,23 @@ img {
     font-size: 35px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
     z-index: 1;
-    padding: 50px;
 }
 .hero h3 {
     font-size: 20px;
     color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
     display: flex;
     text-align: right;
     justify-content: flex-end;
-    z-index: 1;
     padding-right: 100px;
+    align-items: flex-end;
 }
+
+
 /* Hero Style End */
 
 
@@ -238,7 +250,7 @@ section {
     header {
         padding-bottom: 10px;
         justify-content: center;
-        position: relative;
+        position: fixed;
     }
     .hero {
         padding-bottom: 10px;
@@ -260,35 +272,52 @@ section {
     }
 }
     @media screen and (max-width: 768px) {
+        header {
+            padding-bottom: 10px;
+            justify-content: center;
+            position: fixed;
+        }
         .hero {
-            padding: 30px 15px;
-            font-size: 15px;
-        }
-        .header-buttons {
-            font-size: 15px;
-            display: flex;
+            padding-bottom: 10px;
             justify-content: center;
-            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
         }
-        .footer {
-            display: flex;
+        .intro {
+            padding-bottom: 10px;
             justify-content: center;
-            flex-wrap: wrap;
-            text-align: center;
-        }   
-        
+            position: relative;
+            width: 100%;
+        }
+        .work {
+            padding-bottom: 10px;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+        }
     }
         @media screen and (max-width: 575px) {
-            .header-buttons {
-                font-size: 15px;
-                display: flex;
+            header {
+                padding-bottom: 10px;
                 justify-content: center;
-                flex-wrap: wrap;
+                position: fixed;
             }
-            .footer {
-                display: flex;
+            .hero {
+                padding-bottom: 10px;
                 justify-content: center;
-                flex-wrap: wrap;
-                text-align: center;
+                position: relative;
+                width: 100%;
+            }
+            .intro {
+                padding-bottom: 10px;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+            }
+            .work {
+                padding-bottom: 10px;
+                justify-content: center;
+                position: relative;
+                width: 100%;
             }
         }
